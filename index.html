@@ -10,61 +10,76 @@
 
 <body>
 
-<header>
-  <h1>DSR Mercedes Specialist</h1>
-  <p>Expert Mercedes Servicing & Repairs</p>
+<header class="header">
+  <div class="container">
+    <h1>DSR Mercedes Specialist</h1>
+    <p>Mercedes Diagnostics • Servicing • Repairs</p>
+  </div>
 </header>
 
-<nav>
-  <a href="#services">Services</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
+<nav class="nav">
+  <div class="container">
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
 <section class="hero">
-  <h2>Trusted Mercedes Specialists</h2>
-  <p>Diagnostics • Servicing • Repairs</p>
-</section>
-
-<section id="services">
-  <h2>Services</h2>
-  <ul>
-    <li>Diagnostics</li>
-    <li>Servicing</li>
-    <li>Engine Repairs</li>
-    <li>Brake & Suspension Work</li>
-  </ul>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <div>Image 1</div>
-    <div>Image 2</div>
-    <div>Image 3</div>
+  <div class="container">
+    <h2>Trusted Mercedes Specialists in the UK</h2>
+    <p>Dealer-level diagnostics without dealer prices.</p>
+    <a href="#contact" class="btn">Get a Quote</a>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact Us</h2>
+<section id="services" class="section">
+  <div class="container">
+    <h2>Services</h2>
 
-  <form action="https://formspree.io/f/xeengabd" method="POST">
+    <div class="grid">
+      <div class="card">Full Diagnostics</div>
+      <div class="card">Servicing & Maintenance</div>
+      <div class="card">Engine Repairs</div>
+      <div class="card">Brakes & Suspension</div>
+    </div>
+  </div>
+</section>
 
-    <input type="text" name="Name" placeholder="Name" required>
-    <input type="email" name="Email" placeholder="Email" required>
-    <input type="text" name="Subject" placeholder="Subject" required>
-    <input type="text" name="Registration Number" placeholder="Registration Number">
-    <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+<section id="gallery" class="section dark">
+  <div class="container">
+    <h2>Gallery</h2>
 
-    <button type="submit">Send Message</button>
+    <div class="grid">
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+      <div class="img-box">Image</div>
+    </div>
+  </div>
+</section>
 
-  </form>
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Us</h2>
 
-  <p>Email: revans660@gmail.com</p>
+    <form action="https://formspree.io/f/xeengabd" method="POST" class="form">
+
+      <input type="text" name="Name" placeholder="Name" required>
+      <input type="email" name="Email" placeholder="Email" required>
+      <input type="text" name="Subject" placeholder="Subject" required>
+      <input type="text" name="Registration Number" placeholder="Vehicle Registration">
+      <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+    <p class="email">Email: revans660@gmail.com</p>
+  </div>
 </section>
 
 <footer>
-  © 2026 DSR Mercedes Specialist
+  <p>© 2026 DSR Mercedes Specialist</p>
 </footer>
 
 </body>
