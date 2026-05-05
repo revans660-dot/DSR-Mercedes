@@ -1,72 +1,152 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #222;
 }
 
-header {
+body {
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: #000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+}
+
+.header p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* Nav */
+.nav {
   background: #111;
-  color: white;
+  padding: 15px 0;
   text-align: center;
-  padding: 25px;
 }
 
-nav {
-  background: #222;
-  text-align: center;
-  padding: 10px;
-}
-
-nav a {
-  color: white;
+.nav a {
+  color: #fff;
   text-decoration: none;
   margin: 0 15px;
+  font-size: 14px;
 }
 
+/* Hero */
 .hero {
-  background: black;
-  color: white;
+  padding: 100px 20px;
   text-align: center;
-  padding: 80px 20px;
+  background: linear-gradient(to right, #000, #1a1a1a);
 }
 
-section {
-  max-width: 900px;
-  margin: 20px auto;
+.hero h2 {
+  font-size: 34px;
+}
+
+.hero p {
+  margin: 15px 0;
+  color: #bbb;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
   background: white;
-  padding: 30px;
-  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
-.gallery {
+/* Sections */
+.section {
+  padding: 70px 0;
+  background: #111;
+}
+
+.section.dark {
+  background: #0a0a0a;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.gallery div {
-  background: #ddd;
-  height: 140px;
+.card {
+  background: #1c1c1c;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Gallery */
+.img-box {
+  background: #222;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  color: #777;
 }
 
-form {
+/* Form */
+.form {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: auto;
 }
 
 input, textarea {
-  margin-bottom: 10px;
-  padding: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
 }
 
 button {
-  background: black;
-  color: white;
   padding: 12px;
+  background: white;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.email {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #666;
 }
