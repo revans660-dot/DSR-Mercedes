@@ -4,104 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DSR Mercedes Specialist</title>
+
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #222;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    nav {
-      background: #222;
-      text-align: center;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 14px;
-    }
-
-    .hero {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
-    }
-
-    .gallery div {
-      background: #ddd;
-      height: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 6px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    button {
-      background: black;
-      color: white;
-      padding: 12px;
-      border: none;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-      color: #666;
-    }
-  </style>
 </head>
 
 <body>
@@ -117,16 +21,16 @@
   <a href="#contact">Contact</a>
 </nav>
 
-<div class="hero">
-  <h2>Trusted Mercedes-Benz Specialists</h2>
+<section class="hero">
+  <h2>Trusted Mercedes Specialists</h2>
   <p>Diagnostics • Servicing • Repairs</p>
-</div>
+</section>
 
 <section id="services">
   <h2>Services</h2>
   <ul>
-    <li>Full Vehicle Diagnostics</li>
-    <li>Servicing & Maintenance</li>
+    <li>Diagnostics</li>
+    <li>Servicing</li>
     <li>Engine Repairs</li>
     <li>Brake & Suspension Work</li>
   </ul>
@@ -147,13 +51,9 @@
   <form action="https://formspree.io/f/xeengabd" method="POST">
 
     <input type="text" name="Name" placeholder="Name" required>
-
     <input type="email" name="Email" placeholder="Email" required>
-
     <input type="text" name="Subject" placeholder="Subject" required>
-
     <input type="text" name="Registration Number" placeholder="Registration Number">
-
     <textarea name="Message" placeholder="Message" rows="5" required></textarea>
 
     <button type="submit">Send Message</button>
