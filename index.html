@@ -1,86 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DSR Mercedes-Benz Service & Repairs</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSR Mercedes-Benz Service & Repairs</title>
 
-  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <header class="topbar">
   <div class="container">
-    <h1>Mercedes-Benz Service & Repairs</h1>
-    <p>Leighton Buzzard | Independent Mercedes Specialists</p>
+    <img src="images/logo.png" class="logo" alt="DSR">
+    <p>Tel: 01525 383000 | Leighton Buzzard</p>
   </div>
 </header>
 
+<!-- NAV -->
 <nav class="nav">
-  <div class="container">
-    <a href="#services">Services</a>
-    <a href="#work">Workshop</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <a class="active" href="#">HOME</a>
+  <a href="#about">ABOUT US</a>
+  <a href="#services">SERVICES</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="#contact">CONTACT</a>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <h2>Dealer-Level Mercedes Expertise</h2>
-    <p>Diagnostics, servicing and repairs with honest independent pricing.</p>
+  <div class="hero-overlay">
+    <h1>Mercedes-Benz Service & Repairs</h1>
+    <p>Diagnostic Services and Repair ‘DSR’ has been involved in the repair and maintenance of all types of vehicles for over 15 years.</p>
+    <button>LEARN MORE</button>
   </div>
 </section>
 
-<section id="services" class="section">
-  <div class="container">
-    <h2>What We Offer</h2>
+<!-- SERVICES -->
+<section class="services" id="services">
 
-    <div class="grid">
-      <div class="card">Servicing</div>
-      <div class="card">Diagnostics</div>
-      <div class="card">Brakes & Suspension</div>
-      <div class="card">Electrical Repairs</div>
-      <div class="card">MOT Preparation</div>
-      <div class="card">Air Conditioning</div>
-    </div>
+  <div class="left">
+    <h2>What we offer</h2>
+    <ul>
+      <li>Professional and reliable service</li>
+      <li>Direct contact with technician</li>
+      <li>Original parts fitted</li>
+      <li>Dealer-level diagnostics</li>
+      <li>Free local collection</li>
+    </ul>
   </div>
+
+  <div class="right">
+    <h2>Services We Provide</h2>
+    <ul>
+      <li>Servicing</li>
+      <li>MOTs</li>
+      <li>Brakes</li>
+      <li>Clutches</li>
+      <li>Diagnostics</li>
+      <li>Air Con</li>
+    </ul>
+  </div>
+
 </section>
 
-<section id="work" class="section dark">
-  <div class="container">
+<!-- WORKSHOP + CONTACT -->
+<section class="split">
+
+  <div class="workshop">
     <h2>The Workshop</h2>
-
-    <div class="gallery">
-      <div>Workshop Image</div>
-      <div>Diagnostics Equipment</div>
-      <div>Service Bay</div>
+    <div class="grid">
+      <div></div><div></div><div></div><div></div>
     </div>
   </div>
-</section>
 
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact Us for a Quote</h2>
+  <div class="contact" id="contact">
+    <h2>Contact us for a Quote</h2>
 
-    <form action="https://formspree.io/f/xeengabd" method="POST" class="form">
+    <form action="https://formspree.io/f/xeengabd" method="POST">
 
-      <input type="text" name="Name" placeholder="Name" required>
-      <input type="email" name="Email" placeholder="Email" required>
+      <input type="text" name="Name" placeholder="Name *" required>
+      <input type="email" name="Email" placeholder="Email *" required>
       <input type="text" name="Subject" placeholder="Subject">
-      <input type="text" name="Registration Number" placeholder="Registration Number">
-      <textarea name="Message" placeholder="Message" rows="5" required></textarea>
+      <input type="text" name="Reg No" placeholder="Reg No">
+      <textarea name="Message" placeholder="Message"></textarea>
 
-      <button type="submit">Send Enquiry</button>
+      <button type="submit">Send</button>
 
     </form>
 
-    <p class="email">revans660@gmail.com</p>
   </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 DSR Mercedes-Benz Specialist</p>
+  <p>© 2026 DSR Automotive Workshop</p>
 </footer>
 
 </body>
