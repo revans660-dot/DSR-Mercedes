@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-  background: #0f0f0f;
+  background: #0b0b0b;
   color: #fff;
 }
 
@@ -17,45 +17,49 @@ body {
   margin: auto;
 }
 
-/* Header */
-.header {
+/* Top Bar */
+.topbar {
   background: #000;
   text-align: center;
   padding: 40px 20px;
 }
 
-.header h1 {
-  font-size: 32px;
+.topbar h1 {
+  font-size: 34px;
+  letter-spacing: 1px;
 }
 
-.header p {
+.topbar p {
   color: #aaa;
   margin-top: 10px;
 }
 
 /* Nav */
-.nav {
+.navbar {
   background: #111;
   padding: 15px 0;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
-.nav a {
+.navbar a {
   color: #fff;
-  text-decoration: none;
   margin: 0 15px;
+  text-decoration: none;
   font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 /* Hero */
 .hero {
-  padding: 100px 20px;
+  padding: 120px 20px;
   text-align: center;
-  background: linear-gradient(to right, #000, #1a1a1a);
+  background: linear-gradient(135deg, #000, #1a1a1a);
 }
 
 .hero h2 {
-  font-size: 34px;
+  font-size: 40px;
 }
 
 .hero p {
@@ -66,27 +70,28 @@ body {
 .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
-  background: white;
-  color: black;
-  text-decoration: none;
+  padding: 14px 30px;
+  background: #fff;
+  color: #000;
   font-weight: bold;
-  border-radius: 5px;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 /* Sections */
 .section {
-  padding: 70px 0;
+  padding: 80px 0;
   background: #111;
 }
 
 .section.dark {
-  background: #0a0a0a;
+  background: #080808;
 }
 
 .section h2 {
   text-align: center;
   margin-bottom: 40px;
+  font-size: 28px;
 }
 
 /* Grid */
@@ -96,57 +101,67 @@ body {
   gap: 20px;
 }
 
+/* Cards */
 .card {
-  background: #1c1c1c;
-  padding: 25px;
+  background: #1b1b1b;
+  padding: 30px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* Gallery */
-.img-box {
+.img {
   background: #222;
   height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 12px;
   color: #777;
 }
 
 /* Form */
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   max-width: 600px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 input, textarea {
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: white;
 }
 
 button {
-  padding: 12px;
-  background: white;
+  padding: 14px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  border-radius: 6px;
 }
 
 .email {
   text-align: center;
   margin-top: 20px;
-  color: #aaa;
+  color: #888;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   background: #000;
   color: #666;
 }
